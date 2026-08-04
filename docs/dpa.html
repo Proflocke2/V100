@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Processing Agreement (DPA) Template — MultiBotV2</title>
+  <style>
+    :root { --bg:#0d1117;--surface:#161b22;--border:#30363d;--accent:#ff6b35;--text:#e6edf3;--muted:#8b949e;--link:#58a6ff; }
+    * { box-sizing:border-box;margin:0;padding:0; }
+    body { background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.7; }
+    nav { background:var(--surface);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;gap:2rem;height:60px; }
+    nav .brand { font-weight:700;color:var(--accent);text-decoration:none; }
+    nav a { color:var(--muted);text-decoration:none;font-size:0.9rem; }
+    main { max-width:820px;margin:0 auto;padding:3rem 2rem; }
+    h1 { font-size:1.8rem;margin-bottom:0.25rem; }
+    .date { color:var(--muted);font-size:0.875rem;margin-bottom:2rem; }
+    h2 { font-size:1.2rem;margin:2rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border); }
+    p { color:#cdd9e5;margin-bottom:1rem; }
+    ul,ol { color:#cdd9e5;margin:0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom:0.4rem; }
+    .box { background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.2rem 1.5rem;margin:1rem 0; }
+    .box.warn { border-color:#e3b341;background:#2d1e03; }
+    table { width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.875rem; }
+    th { background:#1f2937;padding:0.6rem 1rem;text-align:left;border-bottom:1px solid var(--border); }
+    td { padding:0.6rem 1rem;border-bottom:1px solid var(--border);color:#cdd9e5; }
+    .field { background:var(--surface);border:1px dashed var(--border);padding:0.5rem 1rem;margin:0.5rem 0;border-radius:4px;color:var(--muted);font-style:italic; }
+    footer { border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--muted);font-size:0.85rem;margin-top:4rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">MultiBotV2</a>
+  <a href="index.html">Documentation</a>
+  <a href="privacy.html">Privacy Policy</a>
+</nav>
+
+<main>
+  <h1>Data Processing Agreement (DPA) Template</h1>
+  <p class="date">Template version: August 2026 — pursuant to Art. 28 GDPR</p>
+
+  <div class="box warn">
+    <strong>⚠️ When is this required?</strong><br>
+    This DPA is required only if you operate MultiBotV2 as a service for other organisations or server owners (i.e. you are not the sole owner/operator of the servers the bot runs on). If you run the bot exclusively on your own server for your own community, you are both controller and operator — no DPA is needed.<br><br>
+    <strong>This is a template only — not legal advice.</strong> Have this reviewed by a qualified legal professional before use, especially for commercial deployments.
+  </div>
+
+  <p>This Data Processing Agreement ("DPA") is entered into between:</p>
+
+  <p><strong>Controller:</strong> the server operator who deploys MultiBotV2 to their Discord server ("Controller")</p>
+  <p><strong>Processor:</strong> the developer/operator who provides and maintains the MultiBotV2 instance ("Processor")</p>
+
+  <h2>§ 1 — Subject matter and duration</h2>
+  <p>The Processor processes personal data on behalf of the Controller for the purpose of operating the MultiBotV2 Discord bot on the Controller's Discord server(s). The agreement is in force for as long as the Processor provides the bot service to the Controller.</p>
+
+  <h2>§ 2 — Nature and purpose of processing</h2>
+  <table>
+    <tr><th>Category</th><th>Data types</th><th>Purpose</th></tr>
+    <tr><td>Identity</td><td>Discord User ID, Guild ID</td><td>Association of records with users/servers</td></tr>
+    <tr><td>Moderation</td><td>Warning history, ban records, mod notes</td><td>Server safety and audit trail</td></tr>
+    <tr><td>Economy</td><td>Coin balance, XP, level, daily claim timestamps</td><td>Gamification features</td></tr>
+    <tr><td>Tickets</td><td>Ticket transcripts, application answers</td><td>Support and recruitment workflows</td></tr>
+    <tr><td>Community</td><td>Birthday dates, AFK reasons, custom command usage</td><td>Community engagement features</td></tr>
+    <tr><td>Messages (opt-in)</td><td>Message content, channel ID, timestamp</td><td>Server backup, only if enabled by Controller</td></tr>
+  </table>
+
+  <h2>§ 3 — Controller's obligations</h2>
+  <ul>
+    <li>The Controller is responsible for informing members of the server about data collection in accordance with Art. 13/14 GDPR.</li>
+    <li>The Controller ensures that processing of personal data through the bot has a valid legal basis under Art. 6 GDPR.</li>
+    <li>The Controller will promptly forward data subject requests (access, deletion, correction) to the Processor where the Processor's cooperation is needed.</li>
+    <li>The Controller will keep their Discord server's bot integration private or clearly labelled as community-run, so members are not misled about the data controller's identity.</li>
+  </ul>
+
+  <h2>§ 4 — Processor's obligations</h2>
+  <ul>
+    <li>The Processor processes personal data only according to documented instructions from the Controller (the bot's configured features).</li>
+    <li>The Processor ensures that persons authorised to process personal data are under an appropriate obligation of confidentiality.</li>
+    <li>The Processor implements appropriate technical and organisational security measures pursuant to Art. 32 GDPR, including encryption of sensitive values (webhook URLs, tokens) at rest.</li>
+    <li>The Processor assists the Controller with data subject rights (Art. 15–22 GDPR) through the bot's built-in commands (<code>/data info</code>, <code>/data delete</code>).</li>
+    <li>The Processor notifies the Controller without undue delay of any personal data breach (Art. 33 GDPR).</li>
+    <li>The Processor deletes or returns all personal data upon termination of the service relationship, at the Controller's choice.</li>
+  </ul>
+
+  <h2>§ 5 — Sub-processors</h2>
+  <p>The Processor uses the following sub-processors:</p>
+  <table>
+    <tr><th>Sub-processor</th><th>Service</th><th>Location</th><th>Basis for transfer</th></tr>
+    <tr><td>Discord Inc.</td><td>Discord platform API</td><td>USA</td><td>EU-US Data Privacy Framework / SCCs</td></tr>
+    <tr><td>Render Inc. (or chosen host)</td><td>Bot hosting infrastructure</td><td>USA / configurable</td><td>EU-US Data Privacy Framework / SCCs</td></tr>
+  </table>
+  <p>No other sub-processors are used. The GitHub DB-sync feature has been removed and is not available.</p>
+
+  <h2>§ 6 — International data transfers</h2>
+  <p>Processing takes place on the infrastructure of the hosting provider chosen by the Processor (default: Render.com, USA). Transfers to the USA are made on the basis of the EU-US Data Privacy Framework or the European Commission's Standard Contractual Clauses (SCCs), as applicable. The hosting provider's own privacy documentation should be consulted for details.</p>
+
+  <h2>§ 7 — Deletion and return of data</h2>
+  <p>Upon termination of the service, the Processor will delete all personal data from the bot's database within 30 days, unless the Controller requests return of data via the <code>/bot-backup export</code> command prior to termination. The Controller acknowledges that once data is deleted it cannot be recovered.</p>
+
+  <h2>§ 8 — Governing law</h2>
+  <p>This DPA is governed by the laws of the jurisdiction of the Processor. Disputes are subject to the competent courts in that jurisdiction.</p>
+
+  <h2>§ 9 — Signatures</h2>
+  <div class="field">Controller name / organisation: ___________________________</div>
+  <div class="field">Controller contact email: ___________________________</div>
+  <div class="field">Controller signature and date: ___________________________</div>
+  <br>
+  <div class="field">Processor name / organisation: ___________________________</div>
+  <div class="field">Processor contact email: ___________________________</div>
+  <div class="field">Processor signature and date: ___________________________</div>
+
+  <div class="box" style="margin-top:2rem">
+    <strong>Note:</strong> For informal deployments between friends or small communities, a simple email exchange confirming both parties' agreement to this template is sufficient. Formal signatures are generally only required for commercial or professional deployments.
+  </div>
+</main>
+
+<footer>
+  <p>MultiBotV2 · <a href="index.html">Documentation</a> · <a href="privacy.html">Privacy Policy</a> · DPA Template</p>
+  <p style="margin-top:0.5rem;font-size:0.8rem">This template is provided for informational purposes only and does not constitute legal advice.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "language": {
+    "set_title": "🌍 Language updated",
+    "set_body": "Server language is now **{language}**. All messages will use this language from now on.",
+    "list_title": "🌍 Available languages",
+    "current": "Current: **{language}**",
+    "invalid": "❌ Unknown language code. Available: {available}"
+  },
+  "embed_color_set": "✅ Default embed color set to `{color}`"
+}

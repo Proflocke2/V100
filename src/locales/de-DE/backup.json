@@ -1,0 +1,46 @@
+{
+  "create": {
+    "creating": "📦 Snapshot wird erstellt…",
+    "created": "✅ Snapshot erstellt",
+    "details": "Version `{version}` • {tables} Tabellen • {rows} Zeilen\nDatei: `{file}`",
+    "failed": "❌ Snapshot fehlgeschlagen: {reason}"
+  },
+  "list": {
+    "title": "📦 Snapshots für diesen Server",
+    "empty": "Noch keine Snapshots für diesen Server.",
+    "row": "`{version}` • {created} • {rows} Zeilen"
+  },
+  "restore": {
+    "starting": "♻️ Snapshot `{version}` wird wiederhergestellt…",
+    "done": "✅ Snapshot wiederhergestellt — **{rows}** Zeilen übernommen, **{failed}** fehlgeschlagen.",
+    "not_found": "❌ Snapshot `{version}` nicht gefunden.",
+    "failed": "❌ Wiederherstellung fehlgeschlagen: {reason}"
+  },
+  "import": {
+    "ok": "✅ Snapshot `{version}` importiert ({rows} Zeilen). Mit `/backup restore version:{version}` anwenden.",
+    "invalid": "❌ Keine gültige MultiBot-Snapshot-Datei.",
+    "wrong_guild": "❌ Dieser Snapshot gehört zu einem anderen Server (Guild `{guild}`)."
+  },
+  "export": {
+    "title": "📤 Snapshot-Export",
+    "footer": "Bewahre diese Datei sicher auf — sie enthält alle Server-Konfigs."
+  },
+  "delete": {
+    "ok": "✅ Snapshot `{version}` gelöscht.",
+    "not_found": "❌ Snapshot `{version}` nicht gefunden."
+  },
+  "migrate": {
+    "running": "⏫ Migrationen laufen… aktuelles Schema: v{from} → v{to}",
+    "done": "✅ Migrationen abgeschlossen — Schema ist jetzt bei v{to}.",
+    "up_to_date": "✅ Schema ist bereits aktuell (v{version}).",
+    "failed": "❌ Migration fehlgeschlagen bei v{version}: {reason}"
+  },
+  "auto": {
+    "enabled": "✅ Automatische Backups sind jetzt **AN**.\nIntervall: **{interval}** • Zustellung: **{delivery}** → {target}\n\nJedes Backup enthält alle Server-Einstellungen UND Textinhalte (Ticket-Transkripte, Tags, Bewerbungen, Zitate).",
+    "disabled": "✅ Automatische Backups sind jetzt **AUS**.",
+    "status_title": "🔁 Status des automatischen Backups",
+    "status_on": "**AN**\nIntervall: **{interval}**\nZustellung: **{delivery}** → {target}\nLetzter Lauf: {last}",
+    "status_off": "**AUS** — mit `/backup auto-enable` aktivieren.",
+    "missing_channel": "❌ Bitte mit der Option `channel` einen Kanal wählen, wenn die Zustellung auf `channel` steht."
+  }
+}

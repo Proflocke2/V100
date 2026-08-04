@@ -1,0 +1,55 @@
+{
+  "panel": {
+    "default_title": "🎫 Ticket erstellen",
+    "default_description": "Klicke unten auf den Button — oder wähle eine Kategorie — und ein privater Kanal wird für dich erstellt.",
+    "default_footer": "Powered by MultiBot",
+    "single_button_label": "Ticket erstellen",
+    "select_placeholder": "Wähle eine Kategorie, um ein Ticket zu öffnen…",
+    "not_found": "Panel nicht gefunden.",
+    "category_not_found": "Kategorie nicht gefunden.",
+    "no_categories": "Füge zuerst eine Kategorie mit `/category add` hinzu.",
+    "panel_full": "Ein Panel kann maximal 25 Kategorien enthalten."
+  },
+  "form": {
+    "max_reached": "Ein Panel kann höchstens 5 Formularfragen haben.",
+    "list_empty": "Für dieses Panel sind keine Formularfragen konfiguriert."
+  },
+  "create": {
+    "modal_title": "📝 Neues Ticket — {category}",
+    "default_question_label": "Warum öffnest du dieses Ticket?",
+    "default_question_placeholder": "Beschreibe dein Anliegen (mind. 10 Zeichen)…",
+    "cooldown": "⏳ Bitte warte **{seconds}s** bevor du ein neues Ticket öffnest.",
+    "too_many_open": "Du hast bereits **{count}** offene Tickets. Schließe zuerst eines.",
+    "outside_hours": "🕐 Der Support ist derzeit offline. Wir sind wieder ab **{next} UTC** erreichbar.",
+    "created": "Ticket erstellt",
+    "created_link": "Dein Ticket: {channel}",
+    "create_failed": "Ticket konnte nicht erstellt werden",
+    "welcome_title": "{emoji} {category} — #{number}",
+    "welcome_default": "Hi {user}, das Support-Team meldet sich gleich bei dir."
+  },
+  "controls": {
+    "close": "Schließen",
+    "claim": "Übernehmen",
+    "unclaim": "Freigeben",
+    "transcript": "Transcript",
+    "add_user": "Benutzer hinzufügen",
+    "reopen": "Wieder öffnen"
+  },
+  "actions": {
+    "claimed": "✋ Ticket übernommen von {user}",
+    "already_claimed": "Dieses Ticket ist bereits von {user} übernommen.",
+    "unclaimed": "✋ Ticket freigegeben von {user}",
+    "closed": "🔒 Ticket geschlossen",
+    "closing_in": "Der Kanal wird in {seconds}s gelöscht.",
+    "already_closed": "Dieses Ticket ist bereits geschlossen.",
+    "user_added": "{user} wurde zu diesem Ticket hinzugefügt.",
+    "user_removed": "{user} wurde aus diesem Ticket entfernt.",
+    "renamed": "Kanal umbenannt zu `{name}`",
+    "transcript_sent": "📑 Transcript wurde an den Log-Kanal gesendet.",
+    "transcript_no_log": "📑 Transcript angehängt (kein Log-Kanal konfiguriert).",
+    "not_a_ticket": "Dies ist kein Ticket-Kanal."
+  },
+  "multi": {
+    "max_reached": "Ein Multi-Panel kann maximal 5 Sub-Panels enthalten."
+  }
+}

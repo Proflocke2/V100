@@ -1,0 +1,36 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment / secrets — NEVER commit these
+.env
+.env.*
+!.env.example
+
+# SQLite database + WAL/journal side-files.
+# bot.db is ephemeral on Render's free tier — use /bot-backup export
+# to download a snapshot before redeployments that clear the disk.
+# (The GitHub DB-sync feature has been removed; bot.db is never pushed automatically.)
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Local backup snapshots (modules/backup/service.ts) — contain full guild
+# config + ticket transcripts + application answers. Never belongs in git.
+backups/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# TypeScript build info
+*.tsbuildinfo

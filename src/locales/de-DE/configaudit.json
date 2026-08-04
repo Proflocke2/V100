@@ -1,0 +1,28 @@
+{
+  "action": {
+    "command_disabled": "🔴 Command deaktiviert",
+    "command_enabled": "🟢 Command aktiviert",
+    "security_toggled": "🛡️ Security an/aus",
+    "security_features_changed": "🛡️ Security-Features geändert",
+    "security_severity_changed": "🛡️ Security-Severity geändert",
+    "security_log_channel_changed": "🛡️ Security-Log-Channel geändert",
+    "security_thresholds_changed": "🛡️ Security-Schwellwerte geändert",
+    "channel_exceptions_changed": "📍 Kanal-Ausnahme geändert",
+    "antinuke_toggled": "💣 Anti-Nuke an/aus",
+    "antinuke_action_changed": "💣 Anti-Nuke-Aktion geändert",
+    "antinuke_log_channel_changed": "💣 Anti-Nuke-Log-Channel geändert",
+    "antinuke_limits_changed": "💣 Anti-Nuke-Limits geändert",
+    "antinuke_whitelist_added": "💣 Anti-Nuke-Whitelist: hinzugefügt",
+    "antinuke_whitelist_removed": "💣 Anti-Nuke-Whitelist: entfernt",
+    "welcome_join_toggled": "👋 Beitritts-Nachricht an/aus",
+    "welcome_leave_toggled": "🚪 Austritts-Nachricht an/aus",
+    "reactionrole_panel_created": "🎭 Reaction-Role-Panel erstellt",
+    "reactionrole_panel_deleted": "🎭 Reaction-Role-Panel gelöscht",
+    "modcase_deleted": "Moderations-Fall gelöscht"
+  },
+  "title": "📜 Config-Audit-Log",
+  "empty": "Noch keine protokollierten Änderungen.",
+  "footer": "Deckt Security/Anti-Nuke/Kanal-Ausnahmen/Command-Toggles/Welcome/Reaction-Roles ab — nicht jede einzelne Einstellung im Bot.",
+  "cmd_desc": "Zeigt, wer welche Security-/Config-Einstellung wann geändert hat",
+  "opt_limit_desc": "Wie viele Einträge angezeigt werden (Standard 20, max. 50)"
+}

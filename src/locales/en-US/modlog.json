@@ -1,0 +1,133 @@
+{
+  "channel_type": {
+    "text": "Text",
+    "voice": "Voice",
+    "category": "Category",
+    "announcement": "Announcement",
+    "stage": "Stage",
+    "forum": "Forum",
+    "media": "Media",
+    "other": "Type {type}"
+  },
+  "message_deleted": {
+    "title": "🗑️ Message Deleted",
+    "channel": "Channel",
+    "author": "Author",
+    "content": "Content",
+    "content_empty": "*No text (attachment-only, embed, or empty)*",
+    "content_uncached": "*Unknown — this message was not cached before it was deleted (e.g. sent before the bot last restarted).*",
+    "unknown_author": "Unknown",
+    "attachments": "Attachments",
+    "footer_user_id": "User ID: {id}"
+  },
+  "message_edited": {
+    "title": "✏️ Message Edited",
+    "channel": "Channel",
+    "author": "Author",
+    "before": "Before",
+    "after": "After",
+    "before_uncached": "*Unknown — original content wasn't cached (e.g. sent before the last restart).*",
+    "before_empty": "*Unknown*",
+    "after_empty": "*Empty*",
+    "footer_user_id": "User ID: {id}"
+  },
+  "reaction_added": {
+    "title": "👍 Reaction Added",
+    "user": "User",
+    "emoji": "Emoji",
+    "channel": "Channel",
+    "message": "Message",
+    "message_link": "[Jump to message]({url})",
+    "message_unavailable": "*Link unavailable*"
+  },
+  "reaction_removed": {
+    "title": "👎 Reaction Removed",
+    "user": "User",
+    "emoji": "Emoji",
+    "channel": "Channel",
+    "message": "Message",
+    "message_link": "[Jump to message]({url})",
+    "message_unavailable": "*Link unavailable*"
+  },
+  "member_join": {
+    "title": "📥 Member Joined",
+    "user": "User",
+    "account_age": "Account Age",
+    "account_age_days": "{days} days",
+    "created": "Created",
+    "footer": "ID: {id} • Members: {count}"
+  },
+  "member_leave": {
+    "title": "📤 Member Left",
+    "user": "User",
+    "reason": "Reason",
+    "reason_voluntary": "Left voluntarily",
+    "reason_kicked": "Kicked by {executor}",
+    "reason_kicked_with_note": "Kicked by {executor} — {note}",
+    "footer": "ID: {id} • Members: {count}"
+  },
+  "voice_join": {
+    "title": "🔊 Voice Channel Joined",
+    "user": "User",
+    "channel": "Channel",
+    "footer_user_id": "User ID: {id}"
+  },
+  "voice_leave": {
+    "title": "🔉 Voice Channel Left",
+    "user": "User",
+    "channel": "Channel",
+    "footer_user_id": "User ID: {id}"
+  },
+  "voice_move": {
+    "title": "🔀 Voice Channel Switched",
+    "user": "User",
+    "from": "From",
+    "to": "To",
+    "footer_user_id": "User ID: {id}"
+  },
+  "channel_create": {
+    "title": "📁 Channel Created",
+    "name": "Name",
+    "type": "Type",
+    "created_by": "Created By",
+    "unknown": "Unknown",
+    "footer_channel_id": "Channel ID: {id}"
+  },
+  "channel_delete": {
+    "title": "🗑️ Channel Deleted",
+    "name": "Name",
+    "type": "Type",
+    "deleted_by": "Deleted By",
+    "unknown": "Unknown",
+    "footer_channel_id": "Channel ID: {id}"
+  },
+  "role_create": {
+    "title": "🎭 Role Created",
+    "role": "Role",
+    "color": "Color",
+    "created_by": "Created By",
+    "unknown": "Unknown",
+    "footer_role_id": "Role ID: {id}"
+  },
+  "role_delete": {
+    "title": "🗑️ Role Deleted",
+    "name": "Name",
+    "color": "Color",
+    "deleted_by": "Deleted By",
+    "unknown": "Unknown",
+    "footer_role_id": "Role ID: {id}"
+  },
+  "role_update": {
+    "title": "✏️ Role Edited",
+    "role": "Role",
+    "changes": "Changes",
+    "footer_role_id": "Role ID: {id}",
+    "field_name": "Name",
+    "field_color": "Color",
+    "field_permissions": "Permissions",
+    "field_hoisted": "Shown Separately",
+    "field_mentionable": "Mentionable",
+    "yes": "Yes",
+    "no": "No"
+  }
+}

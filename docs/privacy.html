@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — MultiBotV2</title>
+  <style>
+    :root { --bg:#0d1117;--surface:#161b22;--border:#30363d;--accent:#ff6b35;--text:#e6edf3;--muted:#8b949e;--link:#58a6ff; }
+    * { box-sizing:border-box;margin:0;padding:0; }
+    body { background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;line-height:1.7; }
+    nav { background:var(--surface);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;gap:2rem;height:60px; }
+    nav .brand { font-weight:700;color:var(--accent);text-decoration:none; }
+    nav a { color:var(--muted);text-decoration:none;font-size:0.9rem; }
+    nav a:hover { color:var(--text); }
+    main { max-width:820px;margin:0 auto;padding:3rem 2rem; }
+    h1 { font-size:2rem;margin-bottom:0.25rem; }
+    .date { color:var(--muted);font-size:0.875rem;margin-bottom:2rem; }
+    h2 { font-size:1.25rem;margin:2rem 0 0.75rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border); }
+    h3 { font-size:1rem;margin:1.2rem 0 0.4rem;color:var(--accent); }
+    p { color:#cdd9e5;margin-bottom:1rem; }
+    ul { color:#cdd9e5;margin:0.5rem 0 1rem 1.5rem; }
+    li { margin-bottom:0.4rem; }
+    code { background:#1f2937;padding:0.1em 0.4em;border-radius:4px;font-family:monospace;font-size:0.85em;color:#f97316; }
+    a { color:var(--link); }
+    .box { background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.2rem 1.5rem;margin:1rem 0; }
+    .box.warn { border-color:#e3b341;background:#2d1e03; }
+    footer { border-top:1px solid var(--border);padding:2rem;text-align:center;color:var(--muted);font-size:0.85rem;margin-top:4rem; }
+  </style>
+</head>
+<body>
+<nav>
+  <a class="brand" href="index.html">MultiBotV2</a>
+  <a href="index.html">Documentation</a>
+  <a href="dpa.html">DPA (AVV)</a>
+</nav>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="date">Last updated: August 2026 — Version 2.0</p>
+
+  <div class="box">
+    <strong>Plain-language summary:</strong> MultiBotV2 is self-hosted software. The person who runs the bot controls all data. No data leaves the server you run it on except for Discord's own API calls. Members can see and delete their data at any time with <code>/data info</code> and <code>/data delete</code>.
+  </div>
+
+  <h2>1. Data controller and processor</h2>
+  <p>MultiBotV2 is self-hosted software. The organisation or individual that deploys and operates a MultiBotV2 instance is the <strong>data controller</strong> within the meaning of Art. 4 No. 7 GDPR. They determine the purposes and means of processing.</p>
+  <p>If you are a developer who provides MultiBotV2 as a service to other server operators, a Data Processing Agreement (DPA / Auftragsverarbeitungsvertrag) is required under Art. 28 GDPR. A template DPA is available at <a href="dpa.html">dpa.html</a> in this documentation.</p>
+  <p>If you are running this bot solely on your own server for your own community, you are the sole data controller and no DPA is required.</p>
+
+  <h2>2. What data is collected and why</h2>
+
+  <h3>2a. Automatically collected when the bot is used</h3>
+  <ul>
+    <li><strong>Discord User ID</strong> — public identifier used to associate XP, economy, warnings, and per-user records with the correct account.</li>
+    <li><strong>Discord Guild (Server) ID</strong> — used to separate all data between different servers on the same instance.</li>
+    <li><strong>Timestamps</strong> — stored for rate-limiting, cooldowns, and streak tracking (e.g. daily rewards).</li>
+  </ul>
+
+  <h3>2b. Collected when specific features are used</h3>
+  <ul>
+    <li><strong>Ticket content</strong> — conversations may be saved as transcripts. Configurable by the server operator.</li>
+    <li><strong>Application answers</strong> — stored when a member submits a form, for staff review.</li>
+    <li><strong>Moderation history</strong> — warnings, bans, kicks, timeouts, for audit purposes.</li>
+    <li><strong>Birthday date</strong> — only if set via <code>/birthday set</code>.</li>
+    <li><strong>Economy and XP data</strong> — coin balance, XP, level, message count.</li>
+  </ul>
+
+  <h3>2c. Only collected if explicitly enabled by the server operator</h3>
+  <ul>
+    <li><strong>Message content</strong> — the message-logging feature (<code>/server-backup messages enable</code>) is <strong>off by default</strong>. If enabled, messages are stored for the configured retention period (default: 90 days).</li>
+  </ul>
+
+  <h2>3. Data storage and infrastructure</h2>
+  <p>All data is stored in a SQLite database file (<code>bot.db</code>) on the server infrastructure chosen by the operator. MultiBotV2 does not use third-party databases, analytics services, or advertising networks.</p>
+
+  <div class="box warn">
+    <strong>⚠️ No GitHub synchronisation:</strong> The GitHub DB-sync feature (which periodically pushed the database to a GitHub repository) has been <strong>permanently removed</strong> from MultiBotV2. This feature posed a risk of unintentional public data exposure and constituted an international data transfer under Art. 44 ff. GDPR that was not adequately disclosed. Data persistence is now handled exclusively via the <code>/bot-backup</code> command.
+  </div>
+
+  <h3>Infrastructure-level logging</h3>
+  <p>The hosting provider (e.g. Render.com) may log IP addresses at the infrastructure level as part of their standard access logging. This is outside the control of the bot application. The bot itself does not log or store IP addresses in its database. For details, refer to your hosting provider's own privacy policy.</p>
+
+  <h2>4. Legal basis for processing (GDPR)</h2>
+  <ul>
+    <li><strong>Legitimate interest (Art. 6(1)(f) GDPR)</strong> — moderation history, rate-limiting data, and server configuration are necessary for the legitimate interest of operating a safe Discord community.</li>
+    <li><strong>Consent (Art. 6(1)(a) GDPR)</strong> — features that store additional data (birthday, applications, message logging) require explicit member or operator action to activate.</li>
+    <li><strong>Contract performance (Art. 6(1)(b) GDPR)</strong> — economy and XP data are necessary to deliver the features members participate in.</li>
+  </ul>
+
+  <h2>5. Data retention</h2>
+  <ul>
+    <li>User data (XP, economy, warnings) — until the member runs <code>/data delete</code> or the operator purges it.</li>
+    <li>Ticket transcripts — until deleted by a server admin.</li>
+    <li>Moderation history — until deleted by a server admin.</li>
+    <li>Logged message content (if enabled) — automatically deleted after the configured retention period (default 90 days, configurable 1–3650 days or indefinitely).</li>
+    <li>Backup snapshots — until deleted by a server admin via <code>/bot-backup delete</code>.</li>
+  </ul>
+
+  <h2>6. Your rights under GDPR and equivalent laws</h2>
+  <ul>
+    <li><strong>Right of access (Art. 15 GDPR):</strong> Run <code>/data info</code> in any server where the bot is active to see a summary of all data stored about you on that server.</li>
+    <li><strong>Right to erasure (Art. 17 GDPR):</strong> Run <code>/data delete</code> to permanently and irreversibly delete all personal data stored about you on that server. Deletion is executed as an atomic database transaction covering XP, economy, warnings, tickets, logged messages, birthdays, notes, and all other per-user tables.</li>
+    <li><strong>Right to rectification (Art. 16 GDPR):</strong> Contact the server operator for corrections to stored data that cannot be changed via the bot's own commands.</li>
+    <li><strong>Right to restrict processing (Art. 18 GDPR):</strong> Contact the server operator.</li>
+    <li><strong>Right to data portability (Art. 20 GDPR):</strong> The bot does not currently offer a machine-readable personal data export. Contact the server operator for a manual extract.</li>
+    <li><strong>Right to object (Art. 21 GDPR):</strong> Contact the server operator to object to specific processing activities.</li>
+  </ul>
+
+  <h2>7. Children's privacy and minimum age</h2>
+  <p>Discord requires users to be at least 13 years old globally. However, in Germany and several other EU member states, the minimum age for digital consent under Art. 8 GDPR is <strong>16 years</strong> (or the applicable national age, unless parental consent is provided). MultiBotV2 does not implement age verification and relies on Discord's own age-gating mechanisms.</p>
+  <p>If your community is likely to include users under 16, the server operator should obtain and document appropriate parental consent or restrict the collection of personal data from those users. The operator is responsible for compliance with Art. 8 GDPR and national implementing legislation in their jurisdiction.</p>
+
+  <h2>8. Gambling features</h2>
+  <p>MultiBotV2 includes gambling mini-games (blackjack, slots, coin challenges). All in-game currency is virtual and has no monetary value. No real money is involved at any point.</p>
+  <p>Responsible-gaming disclosures are shown to users the first time they use gambling commands, and users must actively accept them before playing. Cooldowns and session limits are enforced to limit excessive use.</p>
+  <p><strong>Important for server operators:</strong> If virtual currency earned through this bot is linked to real-world value outside of Discord (e.g. exchangeable for Minecraft in-game items with a real-money market), this may engage gambling regulations in your jurisdiction. That linkage is outside the control of this software. The operator is solely responsible for ensuring compliance with applicable gambling laws.</p>
+
+  <h2>9. Contact and data requests</h2>
+  <p>MultiBotV2 is self-hosted software. There is no central operator. Data-related requests must be directed to the administrators of the specific Discord server you are using. They are the data controller for their deployment.</p>
+
+  <h2>10. Discord's own privacy practices</h2>
+  <p>MultiBotV2 operates within Discord's platform. Discord processes data independently under its own <a href="https://discord.com/privacy" target="_blank" rel="noopener">Privacy Policy</a>. MultiBotV2 only accesses data that Discord makes available via its Bot API.</p>
+
+  <h2>11. Changes to this policy</h2>
+  <p>This policy is updated when data-processing features change. The version number and date at the top reflect the most recent revision. The changelog is maintained in the repository.</p>
+</main>
+
+<footer>
+  <p>MultiBotV2 · <a href="index.html">Documentation</a> · Privacy Policy · <a href="dpa.html">DPA Template</a></p>
+  <p style="margin-top:0.5rem;font-size:0.8rem">MultiBotV2 is not affiliated with or endorsed by Discord Inc.</p>
+</footer>
+</body>
+</html>

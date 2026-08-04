@@ -1,0 +1,28 @@
+{
+  "action": {
+    "command_disabled": "🔴 Команда отключена",
+    "command_enabled": "🟢 Команда включена",
+    "security_toggled": "🛡️ Безопасность вкл/выкл",
+    "security_features_changed": "🛡️ Функции безопасности изменены",
+    "security_severity_changed": "🛡️ Уровень серьёзности изменён",
+    "security_log_channel_changed": "🛡️ Канал журнала безопасности изменён",
+    "security_thresholds_changed": "🛡️ Пороги безопасности изменены",
+    "channel_exceptions_changed": "📍 Исключение канала изменено",
+    "antinuke_toggled": "💣 Anti-Nuke вкл/выкл",
+    "antinuke_action_changed": "💣 Действие Anti-Nuke изменено",
+    "antinuke_log_channel_changed": "💣 Канал журнала Anti-Nuke изменён",
+    "antinuke_limits_changed": "💣 Лимиты Anti-Nuke изменены",
+    "antinuke_whitelist_added": "💣 Белый список Anti-Nuke: добавлено",
+    "antinuke_whitelist_removed": "💣 Белый список Anti-Nuke: удалено",
+    "welcome_join_toggled": "👋 Сообщение о входе вкл/выкл",
+    "welcome_leave_toggled": "🚪 Сообщение о выходе вкл/выкл",
+    "reactionrole_panel_created": "🎭 Панель ролей по реакциям создана",
+    "reactionrole_panel_deleted": "🎭 Панель ролей по реакциям удалена",
+    "modcase_deleted": "Дело модерации удалено"
+  },
+  "title": "📜 Журнал аудита настроек",
+  "empty": "Изменений пока не зафиксировано.",
+  "footer": "Охватывает безопасность/Anti-Nuke/исключения каналов/переключение команд/приветствие/роли по реакциям — не каждую настройку бота.",
+  "cmd_desc": "Показывает, кто и когда изменил настройку безопасности/конфигурации",
+  "opt_limit_desc": "Сколько записей показывать (по умолчанию 20, макс. 50)"
+}

@@ -1,0 +1,28 @@
+{
+  "action": {
+    "command_disabled": "🔴 Commande désactivée",
+    "command_enabled": "🟢 Commande activée",
+    "security_toggled": "🛡️ Sécurité activée/désactivée",
+    "security_features_changed": "🛡️ Fonctions de sécurité modifiées",
+    "security_severity_changed": "🛡️ Sévérité de sécurité modifiée",
+    "security_log_channel_changed": "🛡️ Salon de journal sécurité modifié",
+    "security_thresholds_changed": "🛡️ Seuils de sécurité modifiés",
+    "channel_exceptions_changed": "📍 Exception de salon modifiée",
+    "antinuke_toggled": "💣 Anti-nuke activé/désactivé",
+    "antinuke_action_changed": "💣 Action anti-nuke modifiée",
+    "antinuke_log_channel_changed": "💣 Salon de journal anti-nuke modifié",
+    "antinuke_limits_changed": "💣 Limites anti-nuke modifiées",
+    "antinuke_whitelist_added": "💣 Liste blanche anti-nuke : ajout",
+    "antinuke_whitelist_removed": "💣 Liste blanche anti-nuke : retrait",
+    "welcome_join_toggled": "👋 Message d'arrivée activé/désactivé",
+    "welcome_leave_toggled": "🚪 Message de départ activé/désactivé",
+    "reactionrole_panel_created": "🎭 Panneau de rôles-réactions créé",
+    "reactionrole_panel_deleted": "🎭 Panneau de rôles-réactions supprimé",
+    "modcase_deleted": "Dossier de modération supprimé"
+  },
+  "title": "📜 Journal d'audit de configuration",
+  "empty": "Aucun changement enregistré pour l'instant.",
+  "footer": "Couvre sécurité/anti-nuke/exceptions de salon/activation-désactivation de commandes/bienvenue/rôles-réactions — pas chaque réglage du bot.",
+  "cmd_desc": "Affiche qui a changé quel réglage de sécurité/config, et quand",
+  "opt_limit_desc": "Nombre d'entrées à afficher (défaut 20, max 50)"
+}

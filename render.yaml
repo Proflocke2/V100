@@ -1,0 +1,32 @@
+services:
+  # type: web (not worker) — Render's free tier only supports Web Services,
+  # not Background Workers (those require a paid plan). This works because
+  # the bot already binds an HTTP server on $PORT (see src/index.ts) for
+  # exactly this reason. Free-tier web services spin down after ~15 min of
+  # no inbound HTTP traffic — point an external pinger (e.g. UptimeRobot)
+  # at this service's URL, on an interval under 15 min, to keep it awake.
+  - type: web
+    name: MultiBotV2
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: node prestart.js && node dist/index.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CLIENT_ID
+        sync: false
+      # No longer used — commands now deploy to every server the bot is in.
+      # Safe to remove.
+      - key: GUILD_ID
+        sync: false
+      # Optional: Bot owner user ID — enables /deploy for this user
+      - key: BOT_OWNER_ID
+        sync: false
+      # Optional: Documentation website URL for /guide command
+      - key: DOCS_URL
+        sync: false          # e.g. https://your-username.github.io/MultiBotV2/
+      # REMOVED: GITHUB_TOKEN / GITHUB_REPO / GITHUB_BRANCH
+      # GitHub DB-sync has been removed (GDPR international transfer concerns).
+      # Use /bot-backup export/import for data portability instead.
+      # GITHUB_BRANCH
+        sync: false          # default: main

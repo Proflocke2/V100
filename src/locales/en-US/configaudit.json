@@ -1,0 +1,28 @@
+{
+  "action": {
+    "command_disabled": "🔴 Command disabled",
+    "command_enabled": "🟢 Command enabled",
+    "security_toggled": "🛡️ Security on/off",
+    "security_features_changed": "🛡️ Security features changed",
+    "security_severity_changed": "🛡️ Security severity changed",
+    "security_log_channel_changed": "🛡️ Security log channel changed",
+    "security_thresholds_changed": "🛡️ Security thresholds changed",
+    "channel_exceptions_changed": "📍 Channel exception changed",
+    "antinuke_toggled": "💣 Anti-nuke on/off",
+    "antinuke_action_changed": "💣 Anti-nuke action changed",
+    "antinuke_log_channel_changed": "💣 Anti-nuke log channel changed",
+    "antinuke_limits_changed": "💣 Anti-nuke limits changed",
+    "antinuke_whitelist_added": "💣 Anti-nuke whitelist: added",
+    "antinuke_whitelist_removed": "💣 Anti-nuke whitelist: removed",
+    "welcome_join_toggled": "👋 Join message on/off",
+    "welcome_leave_toggled": "🚪 Leave message on/off",
+    "reactionrole_panel_created": "🎭 Reaction-role panel created",
+    "reactionrole_panel_deleted": "🎭 Reaction-role panel deleted",
+    "modcase_deleted": "Moderation case deleted"
+  },
+  "title": "📜 Config Audit Log",
+  "empty": "No changes logged yet.",
+  "footer": "Covers security/anti-nuke/channel exceptions/command toggles/welcome/reaction-roles — not every single setting in the bot.",
+  "cmd_desc": "Show who changed which security/config setting, and when",
+  "opt_limit_desc": "How many entries to show (default 20, max 50)"
+}

@@ -1,0 +1,43 @@
+{
+  "default_message": "Welcome {mention} to **{server}**! You are member #{membercount}.",
+  "default_dm": "👋 Welcome to **{server}**, {username}! Make sure to read the rules and have fun.",
+  "default_leave_message": "👋 **{username}** has left {server}.",
+  "card": {
+    "welcome_text": "WELCOME",
+    "to_server_text": "to {server}",
+    "member_text": "Member #{count}"
+  },
+  "setup": {
+    "configured": "✅ Welcome configured",
+    "channel_label": "Channel: {channel}",
+    "message_label": "Message: {message}",
+    "disabled": "✅ Welcome messages disabled",
+    "preview_failed": "Could not generate welcome preview (canvas unavailable).",
+    "background_set": "✅ Welcome card background updated.",
+    "background_cleared": "✅ Welcome card background reset to default.",
+    "dm_set": "✅ DM-on-join configured",
+    "dm_disabled": "✅ DM-on-join disabled",
+    "leave_configured": "✅ Leave messages configured",
+    "leave_disabled": "✅ Leave messages disabled"
+  },
+  "autorole": {
+    "instant_set": "✅ Instant auto-role set to {role}",
+    "instant_cleared": "✅ Instant auto-role removed",
+    "delayed_set": "✅ Delayed auto-role set: {role} after {minutes} minute(s)",
+    "delayed_cleared": "✅ Delayed auto-role removed",
+    "after_verify_set": "✅ Post-verification role set to {role}",
+    "after_verify_cleared": "✅ Post-verification role removed"
+  },
+  "alt": {
+    "configured": "✅ Alt-account detection enabled — accounts younger than **{days}** day(s) will be flagged.",
+    "disabled": "✅ Alt-account detection disabled.",
+    "log_title": "🚨 Possible alt account",
+    "log_desc": "{user} just joined. Account age: **{age}** (created {timestamp}).",
+    "action_kick": "Auto-kicked: account too young.",
+    "action_dm_kick": "You were kicked from **{server}** because your Discord account is too new. You may rejoin once your account is at least {days} day(s) old."
+  },
+  "preview": {
+    "title": "Welcome preview",
+    "body": "{user}, member #{count}"
+  }
+}

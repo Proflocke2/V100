@@ -1,0 +1,43 @@
+{
+  "default_message": "Willkommen {mention} auf **{server}**! Du bist Mitglied Nr. {membercount}.",
+  "default_dm": "👋 Willkommen auf **{server}**, {username}! Lies dir die Regeln durch und viel Spaß.",
+  "default_leave_message": "👋 **{username}** hat {server} verlassen.",
+  "card": {
+    "welcome_text": "WILLKOMMEN",
+    "to_server_text": "auf {server}",
+    "member_text": "Mitglied Nr. {count}"
+  },
+  "setup": {
+    "configured": "✅ Welcome konfiguriert",
+    "channel_label": "Kanal: {channel}",
+    "message_label": "Nachricht: {message}",
+    "disabled": "✅ Welcome-Nachrichten deaktiviert",
+    "preview_failed": "Welcome-Vorschau konnte nicht erzeugt werden (Canvas nicht verfügbar).",
+    "background_set": "✅ Welcome-Karten-Hintergrund aktualisiert.",
+    "background_cleared": "✅ Welcome-Karten-Hintergrund auf Standard zurückgesetzt.",
+    "dm_set": "✅ Privat-Nachricht beim Beitritt konfiguriert",
+    "dm_disabled": "✅ Privat-Nachricht beim Beitritt deaktiviert",
+    "leave_configured": "✅ Verlassen-Nachrichten konfiguriert",
+    "leave_disabled": "✅ Verlassen-Nachrichten deaktiviert"
+  },
+  "autorole": {
+    "instant_set": "✅ Sofort-Auto-Rolle gesetzt: {role}",
+    "instant_cleared": "✅ Sofort-Auto-Rolle entfernt",
+    "delayed_set": "✅ Verzögerte Auto-Rolle gesetzt: {role} nach {minutes} Minute(n)",
+    "delayed_cleared": "✅ Verzögerte Auto-Rolle entfernt",
+    "after_verify_set": "✅ Nach-Verifizierung-Rolle gesetzt: {role}",
+    "after_verify_cleared": "✅ Nach-Verifizierung-Rolle entfernt"
+  },
+  "alt": {
+    "configured": "✅ Alt-Account-Erkennung aktiviert — Accounts jünger als **{days}** Tag(e) werden markiert.",
+    "disabled": "✅ Alt-Account-Erkennung deaktiviert.",
+    "log_title": "🚨 Möglicher Alt-Account",
+    "log_desc": "{user} ist gerade beigetreten. Account-Alter: **{age}** (erstellt {timestamp}).",
+    "action_kick": "Automatisch gekickt: Account zu jung.",
+    "action_dm_kick": "Du wurdest von **{server}** gekickt, weil dein Discord-Account zu neu ist. Du kannst wieder beitreten, sobald dein Account mindestens {days} Tag(e) alt ist."
+  },
+  "preview": {
+    "title": "Welcome-Vorschau",
+    "body": "{user}, Mitglied Nr. {count}"
+  }
+}

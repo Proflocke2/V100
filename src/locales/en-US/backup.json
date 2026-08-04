@@ -1,0 +1,46 @@
+{
+  "create": {
+    "creating": "📦 Creating snapshot…",
+    "created": "✅ Snapshot created",
+    "details": "Version `{version}` • {tables} tables • {rows} rows\nFile: `{file}`",
+    "failed": "❌ Snapshot failed: {reason}"
+  },
+  "list": {
+    "title": "📦 Snapshots for this server",
+    "empty": "No snapshots saved yet for this server.",
+    "row": "`{version}` • {created} • {rows} rows"
+  },
+  "restore": {
+    "starting": "♻️ Restoring snapshot `{version}`…",
+    "done": "✅ Snapshot restored — **{rows}** rows applied, **{failed}** failed.",
+    "not_found": "❌ Snapshot `{version}` not found for this server.",
+    "failed": "❌ Restore failed: {reason}"
+  },
+  "import": {
+    "ok": "✅ Imported snapshot `{version}` ({rows} rows). Use `/backup restore version:{version}` to apply it.",
+    "invalid": "❌ Not a valid MultiBot snapshot file.",
+    "wrong_guild": "❌ This snapshot belongs to a different server (guild `{guild}`)."
+  },
+  "export": {
+    "title": "📤 Snapshot export",
+    "footer": "Keep this file safe — it contains every server config."
+  },
+  "delete": {
+    "ok": "✅ Snapshot `{version}` deleted.",
+    "not_found": "❌ Snapshot `{version}` not found."
+  },
+  "migrate": {
+    "running": "⏫ Running migrations… current schema: v{from} → v{to}",
+    "done": "✅ Migrations complete — schema is now at v{to}.",
+    "up_to_date": "✅ Schema is already up to date (v{version}).",
+    "failed": "❌ Migration failed at v{version}: {reason}"
+  },
+  "auto": {
+    "enabled": "✅ Automatic backups are now **ON**.\nInterval: **{interval}** • Delivery: **{delivery}** → {target}\n\nEvery backup includes all server settings AND text content (ticket transcripts, tags, applications, quotes).",
+    "disabled": "✅ Automatic backups are now **OFF**.",
+    "status_title": "🔁 Automatic Backup Status",
+    "status_on": "**ON**\nInterval: **{interval}**\nDelivery: **{delivery}** → {target}\nLast run: {last}",
+    "status_off": "**OFF** — use `/backup auto-enable` to turn it on.",
+    "missing_channel": "❌ Please choose a channel with the `channel` option when delivery is set to `channel`."
+  }
+}

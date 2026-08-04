@@ -1,0 +1,55 @@
+{
+  "panel": {
+    "default_title": "🎫 Open a ticket",
+    "default_description": "Click the button below — or pick a category — and a private channel will be created for you.",
+    "default_footer": "Powered by MultiBot",
+    "single_button_label": "Create a ticket",
+    "select_placeholder": "Select a category to open a ticket…",
+    "not_found": "Panel not found.",
+    "category_not_found": "Category not found.",
+    "no_categories": "Add at least one category with `/category add` first.",
+    "panel_full": "Panels can hold a maximum of 25 categories."
+  },
+  "form": {
+    "max_reached": "A panel can have at most 5 form questions.",
+    "list_empty": "No form questions configured for this panel."
+  },
+  "create": {
+    "modal_title": "📝 New ticket — {category}",
+    "default_question_label": "Why are you opening this ticket?",
+    "default_question_placeholder": "Describe your issue (10+ characters)…",
+    "cooldown": "⏳ Please wait **{seconds}s** before opening another ticket.",
+    "too_many_open": "You already have **{count}** open tickets. Close one first.",
+    "outside_hours": "🕐 Support is currently offline. We open again at **{next} UTC**.",
+    "created": "Ticket created",
+    "created_link": "Your ticket: {channel}",
+    "create_failed": "Could not create ticket",
+    "welcome_title": "{emoji} {category} — #{number}",
+    "welcome_default": "Hi {user}, support will be with you shortly."
+  },
+  "controls": {
+    "close": "Close",
+    "claim": "Claim",
+    "unclaim": "Unclaim",
+    "transcript": "Transcript",
+    "add_user": "Add User",
+    "reopen": "Reopen"
+  },
+  "actions": {
+    "claimed": "✋ Ticket claimed by {user}",
+    "already_claimed": "This ticket is already claimed by {user}.",
+    "unclaimed": "✋ Ticket unclaimed by {user}",
+    "closed": "🔒 Ticket closed",
+    "closing_in": "This channel will be deleted in {seconds}s.",
+    "already_closed": "This ticket is already closed.",
+    "user_added": "{user} has been added to this ticket.",
+    "user_removed": "{user} has been removed from this ticket.",
+    "renamed": "Channel renamed to `{name}`",
+    "transcript_sent": "📑 Transcript sent to log channel.",
+    "transcript_no_log": "📑 Transcript attached (no log channel configured).",
+    "not_a_ticket": "This is not a ticket channel."
+  },
+  "multi": {
+    "max_reached": "A multi-panel can hold at most 5 sub-panels."
+  }
+}

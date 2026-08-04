@@ -1,0 +1,133 @@
+{
+  "channel_type": {
+    "text": "Text",
+    "voice": "Voice",
+    "category": "Kategorie",
+    "announcement": "Ankündigung",
+    "stage": "Stage",
+    "forum": "Forum",
+    "media": "Media",
+    "other": "Typ {type}"
+  },
+  "message_deleted": {
+    "title": "🗑️ Nachricht gelöscht",
+    "channel": "Kanal",
+    "author": "Autor",
+    "content": "Inhalt",
+    "content_empty": "*Kein Text (nur Anhang, Embed, oder leer)*",
+    "content_uncached": "*Unbekannt — diese Nachricht war vor dem Löschen nicht im Cache (z.B. gesendet vor dem letzten Bot-Neustart).*",
+    "unknown_author": "Unbekannt",
+    "attachments": "Anhänge",
+    "footer_user_id": "Nutzer-ID: {id}"
+  },
+  "message_edited": {
+    "title": "✏️ Nachricht bearbeitet",
+    "channel": "Kanal",
+    "author": "Autor",
+    "before": "Vorher",
+    "after": "Nachher",
+    "before_uncached": "*Unbekannt — ursprünglicher Inhalt war nicht im Cache (z.B. gesendet vor dem letzten Neustart).*",
+    "before_empty": "*Unbekannt*",
+    "after_empty": "*Leer*",
+    "footer_user_id": "Nutzer-ID: {id}"
+  },
+  "reaction_added": {
+    "title": "👍 Reaktion hinzugefügt",
+    "user": "Nutzer",
+    "emoji": "Emoji",
+    "channel": "Kanal",
+    "message": "Nachricht",
+    "message_link": "[Zur Nachricht springen]({url})",
+    "message_unavailable": "*Link nicht verfügbar*"
+  },
+  "reaction_removed": {
+    "title": "👎 Reaktion entfernt",
+    "user": "Nutzer",
+    "emoji": "Emoji",
+    "channel": "Kanal",
+    "message": "Nachricht",
+    "message_link": "[Zur Nachricht springen]({url})",
+    "message_unavailable": "*Link nicht verfügbar*"
+  },
+  "member_join": {
+    "title": "📥 Mitglied beigetreten",
+    "user": "Nutzer",
+    "account_age": "Account-Alter",
+    "account_age_days": "{days} Tage",
+    "created": "Erstellt",
+    "footer": "ID: {id} • Mitglieder: {count}"
+  },
+  "member_leave": {
+    "title": "📤 Mitglied verlassen",
+    "user": "Nutzer",
+    "reason": "Grund",
+    "reason_voluntary": "Freiwillig verlassen",
+    "reason_kicked": "Gekickt von {executor}",
+    "reason_kicked_with_note": "Gekickt von {executor} — {note}",
+    "footer": "ID: {id} • Mitglieder: {count}"
+  },
+  "voice_join": {
+    "title": "🔊 Voice-Channel betreten",
+    "user": "Nutzer",
+    "channel": "Channel",
+    "footer_user_id": "Nutzer-ID: {id}"
+  },
+  "voice_leave": {
+    "title": "🔉 Voice-Channel verlassen",
+    "user": "Nutzer",
+    "channel": "Channel",
+    "footer_user_id": "Nutzer-ID: {id}"
+  },
+  "voice_move": {
+    "title": "🔀 Voice-Channel gewechselt",
+    "user": "Nutzer",
+    "from": "Von",
+    "to": "Nach",
+    "footer_user_id": "Nutzer-ID: {id}"
+  },
+  "channel_create": {
+    "title": "📁 Channel erstellt",
+    "name": "Name",
+    "type": "Typ",
+    "created_by": "Erstellt von",
+    "unknown": "Unbekannt",
+    "footer_channel_id": "Channel-ID: {id}"
+  },
+  "channel_delete": {
+    "title": "🗑️ Channel gelöscht",
+    "name": "Name",
+    "type": "Typ",
+    "deleted_by": "Gelöscht von",
+    "unknown": "Unbekannt",
+    "footer_channel_id": "Channel-ID: {id}"
+  },
+  "role_create": {
+    "title": "🎭 Rolle erstellt",
+    "role": "Rolle",
+    "color": "Farbe",
+    "created_by": "Erstellt von",
+    "unknown": "Unbekannt",
+    "footer_role_id": "Rollen-ID: {id}"
+  },
+  "role_delete": {
+    "title": "🗑️ Rolle gelöscht",
+    "name": "Name",
+    "color": "Farbe",
+    "deleted_by": "Gelöscht von",
+    "unknown": "Unbekannt",
+    "footer_role_id": "Rollen-ID: {id}"
+  },
+  "role_update": {
+    "title": "✏️ Rolle bearbeitet",
+    "role": "Rolle",
+    "changes": "Änderungen",
+    "footer_role_id": "Rollen-ID: {id}",
+    "field_name": "Name",
+    "field_color": "Farbe",
+    "field_permissions": "Permissions",
+    "field_hoisted": "Separat angezeigt",
+    "field_mentionable": "Erwähnbar",
+    "yes": "Ja",
+    "no": "Nein"
+  }
+}
